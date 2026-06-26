@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIPE CHECK</title>
+
+    <link rel="stylesheet" href="./src/reset.css">
+    <link rel="stylesheet" href="./src/variables.css">
+    <link rel="stylesheet" href="./src/base.css">
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/responsive.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="#">
+                <img src="./image/car.png" alt="Logo">
+            </a>
+            <h1 class="header-title">FIPE Check</h1>
+        </div>
+    </header>
+    <main>
+        <section class="hero-section">
+            <h1 class="hero-title">Descubra o valor real do seu carro</h1>
+            <p class="hero-subtitle">Consulta Gratuita e instantânea direto da tabela FIPE. Saiba quanto vale qualquer
+                veículo antes de
+                comprar ou
+                vender.
+            </p>
+        </section>
+        <section id="result-section" class="section-result hide">
+            <div class="container-result">
+                <div class="result-header">
+                    <span class="result-badge">Preço Médio FIPE</span>
+                    <h2 class="result-title" id="result-model"></h2>
+                    <p class="result-price" id="result-price"></p>
+                </div>
+                <div class="result-details">
+                    <div class="detail-card">
+                        <span class="detail-label">Marca</span>
+                        <strong class="detail-value" id="result-brand"></strong>
+                    </div>
+                    <div class="detail-card">
+                        <span class="detail-label">Ano Modelo</span>
+                        <strong class="detail-value" id="result-year"></strong>
+                    </div>
+                    <div class="detail-card">
+                        <span class="detail-label">Combustível</span>
+                        <strong class="detail-value" id="result-fuel"></strong>
+                    </div>
+                    <div class="detail-card">
+                        <span class="detail-label">Código FIPE</span>
+                        <strong class="detail-value" id="result-code"></strong>
+                    </div>
+                    <div class="detail-card">
+                        <span class="detail-label">Mês de Referência</span>
+                        <strong class="detail-value" id="result-reference"></strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-search">
+            <div class="container-search">
+                <div>
+                    <span>MARCA</span>
+                    <select id="select-marca">
+                        <option value="">Selecione</option>
+                    </select>
+                </div>
+                <div>
+                    <span>MODELO</span>
+                    <select id="select-modelo">
+                        <option value="">Selecione</option>
+                    </select>
+                </div>
+                <div>
+                    <span>ANO</span>
+                    <select id="select-ano">
+                        <option value="">Selecione</option>
+                    </select>
+                </div>
+                <button class="btn-search" id="btn-search">🔍 Consultar valor FIPE</button>
+                <button class="btn-reset" id="btn-reset">🔄 Limpar Busca</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-content">
+        <div>
+            <span>© 2026 FipeCheck. Dados via API pública da FIPE.</span>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
